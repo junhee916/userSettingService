@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <h1>게시글 상세</h1>
+    <table>
+        <tr>
+            <td>No: </td>
+            <td id="No"></td>
+        </tr>
+        <tr>
+            <td>COMPANY: </td>
+            <td id="COMPANY"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NAME: </td>
+            <td id="NAME"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ID: </td>
+            <td id="ID"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>게시글: </td>
+            <td>
+                <textarea id="board"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>업데이트 시간: </td>
+            <td id="updatedAt"></td>
+        </tr>
+        <tr id="bottonView"></tr>
+        <tr></tr>
+    </table>
+    <h2>댓글</h2>
+    <table id="commendView">
+        <tr>
+            <td>
+                <textarea id="commend"></textarea>
+            </td>
+            <td>
+                <input type="button" value="댓글" onclick="addCommend()">
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="/controller/boardShow.js"></script>
+</body>
+</html>

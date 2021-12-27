@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script 
+    src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</head>
+<body>
+    <h1>게시판</h1>
+    <h2>기록을 남기시오.</h2>
+    <table>
+        <tr>
+            <td>
+                <textarea id="board"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="write" onclick="addBoard()">
+            </td>
+        </tr>
+    </table>
+    <table id="viewBoard">
+        <tr>
+            <td>
+                <h2>게시글</h2>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="/controller/board.js"></script>
+</body>
+</html>
